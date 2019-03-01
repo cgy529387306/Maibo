@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshGridView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ptr_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:horizontalSpacing="8dp"
+    android:numColumns="3"
+    android:paddingTop="10dp"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="8dp"
+    ptr:ptrHeaderSubTextColor="@color/user_data_hint_font"
+    ptr:ptrHeaderTextColor="@color/user_data_hint_font"
+    ptr:ptrAnimationStyle="flip"
+    ptr:ptrMode="both" />

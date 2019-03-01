@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imv_gooder_avater"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_avatar_default" />
+
+        <TextView
+            android:id="@+id/txv_gooder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imv_gooder_avater"
+            android:text="和尚洗头用飘柔"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txv_gooder_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txv_gooder_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/imv_gooder_avater"
+            android:text="10分钟前"
+            android:textColor="@color/orange"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txv_weibo_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txv_gooder_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/txv_gooder_time"
+            android:text="来自新浪脉搏"
+            android:visibility="gone"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txv_weibo_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_gooder_avater"
+            android:padding="10dp"
+            android:text="赞了这条脉搏"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="8dp"
+        android:background="@color/bg_fragment" >
+
+        <ImageView
+            android:id="@+id/imv_user_avatar"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/portrait" />
+
+        <TextView
+            android:id="@+id/txv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_alignTop="@+id/imv_user_avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imv_user_avatar"
+            android:singleLine="true"
+            android:text="范特西"
+            android:textSize="@dimen/common_text" />
+
+        <TextView
+            android:id="@+id/txv_weibo_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/txv_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imv_user_avatar"
+            android:maxLines="2"
+            android:text="脉搏内容"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

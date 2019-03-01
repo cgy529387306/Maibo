@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/mm_title" />
+
+    <LinearLayout
+        android:id="@+id/contactitem_layout"
+        style="@style/MMListItem"
+        android:layout_height="56.0dip"
+        android:background="@drawable/selector_mm_listitem"
+        android:paddingLeft="8.0dip" >
+
+        <ImageView
+            android:id="@+id/contactitem_avatar_iv"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:background="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8.0dip" >
+
+            <TextView
+                android:id="@+id/contactitem_nick"
+                style="@style/MMFontTitleInList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="橙蕉助手" />
+
+            <TextView
+                android:id="@+id/contactitem_phone"
+                style="@style/MMFontTitleInList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:gravity="right"
+                android:visibility="invisible"
+                android:layout_marginRight="15dp"
+                android:text="15612345678" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

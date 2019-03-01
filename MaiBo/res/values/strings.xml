@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">脉搏</string>
+    <string name="hint_loading">我在努力加载中..</string>
+    <string name="hint_networkerror">亲，网络好像不给力哦~</string>
+    <string name="hint_nodata">亲，还没有数据哦~~ </string>
+    <string name="hint_soft_update_no">您的APP已经是最新版本</string>
+    <string name="hint_check_update_fail">检查更新失败，请重试</string>
+    <string name="hint_global_view_loading">加载中&#8230;</string>
+    <string name="hint_global_view_error">网络不给力，点击页面刷新。</string>
+    <string name="hint_net_error">网络或服务器出错了，点击重试</string>
+    <string name="label_global_view_hint">加载中&#8230;</string>
+    <string name="label_global_view_error">网络或服务器出错了，点击重试</string>
+    <string name="label_global_view_empty">亲，暂时没有数据哦~</string>
+    <string name="model_new_data_count">%d 条新脉搏</string>
+    <string name="dialog_btn_startUpdate">升级</string>
+    <string name="dialog_btn_nextUpdate">下次再说</string>
+    <string name="dialog_title_clear_cache">清除缓存</string>
+    <string name="dialog_message_clear_cache">确定要清除缓存吗?</string>
+    <string name="dialog_clearing_cache">正在清除缓存…</string>
+    <string name="dialog_positive">确 定</string>
+    <string name="dialog_negative">取 消</string>
+    
+    
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="long_text">asdasdasdas sadasdasd asdasdad asdasdasd dasdasdasdasdasd dasdasdas dasdasdasdasd dasdasdasdasdas dasdasdasdasdad dadadasadasdasd asdasdadasd asdasdadasdasdedcergrfgbvtegb gqergregqrevggvefvrvqgbvewbvasdasdasdas sadasdasd asdasdad asdasdasd dasdasdasdasdasd dasdasdas dasdasdasdasd dasdasdasdasdas dasdasdasdasdad dadadasadasdasd asdasdadasd asdasdadasdasdedcergrfgbvtegb gqergregqrevggvefvrvqgbvewb</string>
+    <string name="medium_text">asdasdasdas sadasdasd asdasdad asdasdasd dasdasdasdasdasd dasdasdas dasdasdasdasd dasdasdasdasdas dasdasdasdasdad dadadasadasdasd asdasdadasd asda</string>
+    <string name="short_text">adasd pqeriewpfnqpf eenvcjri eochrhfeivehgi dfbdcwehfei epfeh</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants" >
+
+        <com.mb.android.widget.CircleImageView
+            android:id="@+id/imv_user_avater"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_avatar_default"
+            app:border_color="@color/transparent"
+            app:border_width="0.0dp" />
+
+        <TextView
+            android:id="@+id/txv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imv_user_avater"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txv_weibo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txv_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/imv_user_avater"
+            android:text=""
+            android:textColor="@color/orange"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txv_weibo_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txv_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/txv_weibo_time"
+            android:text=""
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imv_weibo_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_arrow_down" />
+
+        <com.mb.android.widget.LinkifyTextView
+            android:id="@+id/txv_weibo_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_user_avater"
+            android:padding="10dp"
+            android:autoLink="web"
+            android:text=""
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.mb.android.widget.GridListView
+        android:id="@+id/grd_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" />
+
+    <FrameLayout
+        android:id="@+id/frame_relay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

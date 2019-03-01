@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 项目ID -->
+    <string name="tandy_pid">TANDY_PID</string>
+    <!-- 渠道号 -->
+    <string name="tandy_ch">TANDY_CH</string>
+
+</resources>

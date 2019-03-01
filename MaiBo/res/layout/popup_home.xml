@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/menu_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_menu_weibo"
+        android:drawablePadding="15dp"
+        android:text="脉搏"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_text"
+        android:background="@drawable/btn_list_both_border"/>
+    <TextView 
+        android:id="@+id/menu_follow"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_menu_follow"
+        android:drawablePadding="15dp"
+        android:text="关注"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_text"
+        android:background="@drawable/btn_list_both_border"/>
+    <TextView 
+        android:id="@+id/menu_fans"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_menu_fans"
+        android:drawablePadding="15dp"
+        android:text="粉丝"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_text"
+        android:background="@drawable/btn_list_both_border"/>
+
+</LinearLayout>

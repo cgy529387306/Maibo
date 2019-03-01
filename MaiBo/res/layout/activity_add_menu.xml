@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_add_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_add_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/menu_add_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_ca" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="128dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/menu_add_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/ic_edit_weibo"
+                android:gravity="center"
+                android:text="文字"
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/menu_add_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_edit_photo"
+                android:gravity="center"
+                android:text="相册"
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/menu_add_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_edit_camera"
+                android:gravity="center"
+                android:text="拍摄"
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/menu_add_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_edit_friends"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/menu_add_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_edit_long_weibo"
+                android:gravity="center"
+                android:text="长脉搏"
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/txv_edit_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_edit_more"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="@color/gray_dark"
+                android:textSize="18sp"
+                android:visibility="invisible"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fragment"
+    android:orientation="vertical" >
+
+    <com.mb.android.widget.ClearableEditText
+        android:id="@+id/edt_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_list_top_bottom_border"
+        android:gravity="left"
+        android:padding="10dp"
+        android:hint="请输入昵称"
+        android:textSize="@dimen/common_text" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="4-30位字符，支持中英文、数字"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/common_text_small" />
+    <Button
+        android:id="@+id/btn_comfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_orange"
+        android:padding="10dp"
+        android:text="下一步"
+        android:textColor="@color/gray_light"
+        android:textSize="@dimen/common_text" />
+
+</LinearLayout>

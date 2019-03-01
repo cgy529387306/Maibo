@@ -1,0 +1,108 @@
+package com.mb.android.maiboapp.adapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.mb.android.maiboapp.R;
+import com.mb.android.maiboapp.activity.UserProfileActivity;
+import com.mb.android.maiboapp.activity.WeiboDetailActivity;
+import com.mb.android.maiboapp.constants.ProjectConstants;
+import com.mb.android.maiboapp.entity.MessageGoodsResp.MsgGoodEntity;
+import com.mb.android.maiboapp.utils.NavigationHelper;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.tandy.android.fw2.utils.Helper;
+
+public class MsgGoodsAdapter extends BaseAdapter {
+	private Activity activity;
+	private List<MsgGoodEntity> dataList = new ArrayList<MsgGoodEntity>();
+
+	public MsgGoodsAdapter(Activity act, List<MsgGoodEntity> list) {
+		this.activity = act;
+		this.dataList = list;
+	}
+
+	@Override
+	public int getCount() {
+		return dataList.size();
+	}
+
+	@Override
+	public Object getItem(int position) {
+		return dataList.get(position);
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return position;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		final ViewHolder holder;
+		if (Helper.isNull(convertView)) {
+			holder = new ViewHolder();
+			convertView = LayoutInflater.from(activity).inflate(R.layout.item_msg_good, null);
+			holder.imv_gooder_avater = (ImageView) convertView.findViewById(R.id.imv_gooder_avater);
+			holder.txv_gooder_name = (TextView) convertView.findViewById(R.id.txv_gooder_name);
+			holder.imv_user_avatar = (ImageView) convertView.findViewById(R.id.imv_user_avatar);
+			holder.txv_user_name = (TextView) convertView.findViewById(R.id.txv_user_name);
+			holder.txv_weibo_content = (TextView) convertView.findViewById(R.id.txv_weibo_content);
+			holder.txv_gooder_time = (TextView) convertView.findViewById(R.id.txv_gooder_time);
+			convertView.setTag(holder);
+		} else {
+			holder = (ViewHolder) convertView.getTag();
+		}
+		final MsgGoodEntity entity = (MsgGoodEntity) getItem(position);
+		holder.txv_gooder_name.setText(entity.getMember().getUser_name());
+		ImageLoader.getInstance().displayImage(entity.getMember().getAvatar_large(),holder.imv_gooder_avater);
+		holder.txv_user_name.setText("@"+entity.getStatues().getMember().getUser_name());
+		if (Helper.isEmpty(entity.getStatues().getPhotos())) {
+			holder.imv_user_avatar.setVisibility(View.GONE);
+		}else {
+			holder.imv_user_avatar.setVisibility(View.VISIBLE);
+			ImageLoader.getInstance().displayImage(entity.getStatues().getPhotos().get(0).getBmiddle(),holder.imv_user_avatar);
+		}
+		holder.txv_weibo_content.setText(entity.getStatues().getContent());
+		holder.txv_gooder_time.setText(entity.getStatues().getAdd_time());
+		holder.imv_gooder_avater.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Bundle bundle = new Bundle();
+				bundle.putString(ProjectConstants.BundleExtra.KEY_USER_ID, entity.getMember().getMember_id());
+				bundle.putString(ProjectConstants.BundleExtra.KEY_USER_NAME, entity.getMember().getUser_name());
+				NavigationHelper.startActivity(activity, UserProfileActivity.class, bundle, false);
+			}
+		});
+		convertView.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Bundle bundle=new Bundle();
+				bundle.putString("id", entity.getStatues().getId());
+				NavigationHelper.startActivity(activity,
+						WeiboDetailActivity.class, bundle, false);
+			}
+		});
+		return convertView;
+	}
+
+	static class ViewHolder {
+		ImageView imv_gooder_avater;
+		TextView txv_gooder_name;
+		ImageView imv_user_avatar;
+		TextView txv_user_name;
+		TextView txv_weibo_content;
+		TextView txv_gooder_time;
+	}
+}

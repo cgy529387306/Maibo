@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fragment"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_list_both_border_normal"
+            android:gravity="center"
+            android:text="86"
+            android:textSize="@dimen/common_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_list_top_bottom_border_normal"
+            android:gravity="center"
+            android:text="中国"
+            android:textSize="@dimen/common_text" />
+    </LinearLayout>
+
+    <com.mb.android.widget.ClearableEditText
+        android:id="@+id/edt_user_account"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_list_bottom_border_normal"
+        android:hint="请输入你的手机号"
+        android:padding="10dp"
+        android:phoneNumber="true" />
+
+    <com.mb.android.widget.ClearableEditText
+        android:id="@+id/edt_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_list_bottom_border_normal"
+        android:hint="请设置密码"
+        android:padding="10dp"
+        android:password="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="密码为6-16位数字或字母"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/common_text_small" />
+
+    <Button
+        android:id="@+id/btn_user_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_orange"
+        android:text="注册"
+        android:textColor="@color/gray_light"
+        android:textSize="@dimen/common_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="注册代表你同意"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/common_text_small" />
+
+        <TextView
+            android:id="@+id/txv_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="脉搏网络使用协议"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/common_text_small" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linner_userinfo_addfriend_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <com.mb.android.widget.ClearableEditText
+        android:id="@+id/txv_userinfo_weibosearch"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_search_input"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="6dp"
+        android:paddingLeft="10dp"
+        android:hint="搜我的脉搏"
+        android:textColor="@color/gray_dark"
+        android:textSize="12sp" />
+
+</LinearLayout>

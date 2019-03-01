@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/bg_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+		android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txv_edit_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_edit_weibo"
+            android:gravity="center"
+            android:text="文字"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txv_edit_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_edit_photo"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txv_edit_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_edit_friends"
+            android:gravity="center"
+            android:text="朋友圈"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/txv_edit_long_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_edit_long_weibo"
+            android:gravity="center"
+            android:text="长脉搏"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txv_edit_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_edit_more"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txv_edit_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_edit_more"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp" 
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:background="@color/white">
+        <ImageView 
+            android:id="@+id/imv_edit_cancel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_edit_cancel"/>
+    </LinearLayout>
+</LinearLayout>

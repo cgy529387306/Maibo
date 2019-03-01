@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fragment"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_user_head" >
+
+        <com.mb.android.widget.CircleImageView
+            android:id="@+id/imv_user_avater"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_avatar_default"
+            app:border_color="@color/transparent"
+            app:border_width="0.0dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_fans"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/btn_list_bottom_border" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="关注"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:text="快去看看大家都在关注谁"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/common_icon_arrow" />
+    </LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <LinearLayout 
+	        android:id="@+id/lin_regist"
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:layout_centerInParent="true"
+	        android:orientation="horizontal">
+	        <Button 
+	            android:id="@+id/btn_user_register"
+	            android:layout_width="0dp"
+	            android:layout_height="42dp"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_gravity="center_vertical"
+	            android:gravity="center"
+	            android:text="注册"
+	            android:textColor="@color/orange"
+	            android:textSize="18sp"
+	            android:background="@drawable/shape_rect_gray"/>
+	         <Button 
+	            android:id="@+id/btn_user_login"
+	            android:layout_width="0dp"
+	            android:layout_height="42dp"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="30dp"
+	            android:layout_gravity="center_vertical"
+	            android:gravity="center"
+	            android:text="登录"
+	            android:textColor="@color/gray_dark"
+	            android:textSize="18sp"
+	            android:background="@drawable/shape_rect_gray"/>
+	    </LinearLayout>
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginBottom="20dp"
+	        android:gravity="center"
+	        android:layout_above="@id/lin_regist"
+	        android:text="登录后，你的脉搏、相册、个人资料会显示在这里，展示给别人"
+	        android:textColor="@color/gray_light"
+	        android:textSize="16sp"/>
+	</RelativeLayout>
+</LinearLayout>

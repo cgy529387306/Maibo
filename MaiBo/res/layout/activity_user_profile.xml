@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fragment"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_user_head" />
+
+        <LinearLayout
+            android:id="@+id/lin_actionbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_actionbar_back_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:layout_gravity="center"
+                android:textColor="@drawable/btn_text_white_orange"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.mb.android.widget.CircleImageView
+            android:id="@+id/imv_user_avater"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_avatar_default"
+            app:border_color="@color/transparent"
+            app:border_width="0.0dp" />
+
+        <TextView
+            android:id="@+id/txv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_user_avater"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:singleLine="true"
+            android:textColor="@drawable/btn_text_white_orange"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imv_user_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_user_avater"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txv_user_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_user_male" />
+
+        <LinearLayout
+            android:id="@+id/lin_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txv_user_name"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txv_user_follows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textColor="@drawable/btn_text_white_orange"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txv_user_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textColor="@drawable/btn_text_white_orange"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txv_user_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lin_user_info"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_edit_userinfo"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColor="@drawable/btn_text_white_orange"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_list_bottom_border" >
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" >
+
+            <RelativeLayout
+                android:id="@+id/rel_user_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txv_user_home"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="主页"
+                    android:textColor="@drawable/btn_text_gray_orange"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line_user_home"
+                    android:layout_width="42dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_user_weibos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txv_user_weibos"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="脉搏"
+                    android:textColor="@drawable/btn_text_gray_orange"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line_user_weibos"
+                    android:layout_width="42dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_user_photos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txv_user_photos"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="相册"
+                    android:textColor="@drawable/btn_text_gray_orange"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/line_user_photos"
+                    android:layout_width="42dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frg_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/lin_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_bottom"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txv_user_follow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_list_top_bottom_border"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@drawable/btn_text_gray_orange"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_light" />
+
+         <TextView
+            android:id="@+id/txv_user_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_list_top_bottom_border"
+            android:gravity="center"
+            android:text="聊天"
+            android:textColor="@drawable/btn_text_gray_orange"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/txv_user_article"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_list_top_bottom_border"
+            android:gravity="center"
+            android:text="TA的文章"
+            android:textColor="@drawable/btn_text_gray_orange"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

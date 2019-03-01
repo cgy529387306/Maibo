@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/btn_list_no_boder">
+    <ImageView
+        android:id="@+id/imv_article_thumb"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_avatar_default"
+        />
+    <ImageView
+        android:id="@+id/imv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/common_icon_arrow"/>
+    
+    <TextView
+        android:id="@+id/txv_article_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/imv_article_thumb"
+        android:layout_toLeftOf="@id/imv_arrow"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:text="angelbaby"/>
+    <com.mb.android.widget.LinkifyTextView
+        android:id="@+id/txv_article_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="3"
+        android:layout_toRightOf="@id/imv_article_thumb"
+        android:layout_toLeftOf="@id/imv_arrow"
+        android:layout_below="@id/txv_article_title"
+        android:textSize="14sp"
+        android:textColor="@color/gray_dark"
+        android:text="现在的孩子怎么变成这样子了现在"/>
+</RelativeLayout>

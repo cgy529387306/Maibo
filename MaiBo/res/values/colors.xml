@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本颜色 -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#88000000</color>
+    <!-- 背景色 -->
+    <color name="bg_gray">#FFECECEC</color>
+    <color name="bg_gray_night">#FF37383C</color>
+    <color name="base_green">#00B627</color>
+    <!-- 蓝色 -->
+    <color name="blue_light">#FF4496F0</color>
+    <color name="blue_dark">#FF505A8C</color>
+    <!-- 黑色 -->
+    <color name="black_dark">#FF282828</color>
+    <color name="black_light">#FF3C4246</color>
+    <color name="user_data_hint_font">#999999</color>
+    <!-- 文本色 -->
+    <color name="text_green_light">#FF2D96E5</color>
+    <color name="text_green_light_night">#FF2B7409</color>
+    <color name="text_gray_light">#FF919191</color>
+    <color name="text_black_light">#FF48494B</color>
+    <color name="text_gray_dark">#FF878787</color>
+    <color name="text_black_gray">#FF8c8c8c</color>
+    <color name="text_has_read">#FF8D8D8D</color>
+    <color name="bg_orange_selected">#E78A00</color>
+    <color name="bg_orange">#FF9800</color>
+    <!-- 蓝色按钮 -->
+    <color name="shape_blue_button_normal">#1AA9F3</color>
+    <color name="shape_blue_button_press">#0C78DD</color>
+    <color name="text_gray">#888888</color>
+    <color name="text_orange">#FF7900</color>
+    <color name="listview_item_press">#FFF5F5F5</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <drawable name="bg_imv_normal">#11000000</drawable>
+
+    <color name="theme_color">#33BBFF</color>
+    <color name="color_blue">#576b95</color>
+    <!-- 项目通用颜色 -->
+    <color name="bg_actionbar">#f6f6f6</color>
+    <!-- 页面背景色 -->
+    <color name="bg_fragment">#f2f2f2</color>
+    <!-- 灰色字体 -->
+    <color name="gray_dark">#909090</color>
+    <color name="gray_light">#CCCCCC</color>
+    <!-- 橘色字体 -->
+    <color name="orange">#FF7E00</color>
+    <!-- 红色 -->
+    <color name="red">#FF4000</color>
+    <color name="line_theme_night">#272d31</color>
+    <color name="line_theme_light">#CCCCCC</color>
+
+</resources>
